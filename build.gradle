@@ -1,0 +1,21 @@
+allprojects {
+    apply plugin: 'java'
+    group = "com.oathisgn"
+    version = "1.0.0.0"
+    ext {
+        junitVersion = "4.12"
+        compileJava.options.encoding = 'UTF-8'
+        compileTestJava.options.encoding = 'UTF-8'
+    }
+}
+    repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+        maven { url "http://repo.spring.io/snapshot" }
+        maven { url "http://repo.spring.io/milestone" }
+    }
+
+    dependencies {
+        testCompile("junit:junit:${junitVersion}")
+    }
