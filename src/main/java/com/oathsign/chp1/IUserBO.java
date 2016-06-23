@@ -1,6 +1,6 @@
 package com.oathsign.chp1;
 
-public interface IUserBO extends IUserInfo {
+public interface IUserBO {
     void setUserID(String userID);
 
     String getUserID();

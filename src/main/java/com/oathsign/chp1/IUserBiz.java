@@ -1,6 +1,6 @@
 package com.oathsign.chp1;
 
-public interface IUserBiz extends IUserInfo {
+public interface IUserBiz {
     boolean changePassword(String oldPassword);
 
     boolean deleteUser();
